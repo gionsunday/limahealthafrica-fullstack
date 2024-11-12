@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title>Lima Health Africa</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Lima Health Africa, Healthy Africa, Online Hospital" name="keywords">
+    <meta
+        content="Lima Health Africa is a world class hospital whose focus is to bring access health facilities to africans at their convinience. "
+        name="description">
+
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -20,6 +23,8 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Libraries Stylesheet -->
     <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -389,8 +394,11 @@
                         Newsletter</h4>
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
+                            <input type="text" id="newsletteremail" class="form-control p-3 border-0"
+                                placeholder="Your Email Address">
+                            <button id="newsletterbtn" class="btn btn-primary">Sign Up</button>
+
+                            <small id="newslettererror" style="color: crimson;"></small>
                         </div>
                     </form>
                     <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
@@ -438,7 +446,9 @@
     <script src="../../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
+
     <script src="../../js/main.js"></script>
+    <script src="../../js/newsletter.js"></script>
 
 
 </body>

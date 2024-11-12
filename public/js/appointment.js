@@ -1,8 +1,8 @@
 window.addEventListener("load", () => {
   const appointmentNameInput = document.querySelector("#appointmentname");
   const appointmentEmailInput = document.querySelector("#appointmentemail");
-  const appointmentPhoneInput = document.querySelector("#appointmentphone");
-  const appointmentTopicInput = document.querySelector("#appointmenttopic");
+  const appointmentPhoneInput = document.querySelector("#appointmentdoctor");
+  const appointmentTopicInput = document.querySelector("#appointmentdepartment");
   const appointmentDateInput = document.querySelector("#appointmentdate");
   const appointmentTimeInput = document.querySelector("#appointmenttime");
   const appointmentMessageInput = document.querySelector("#appointmentmessage");

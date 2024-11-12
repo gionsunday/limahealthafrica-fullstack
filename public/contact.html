@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title>Lima Health Africa</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Lima Health Africa, Healthy Africa, Online Hospital" name="keywords">
+    <meta
+        content="Lima Health Africa is a world class hospital whose focus is to bring access health facilities to africans at their convinience. "
+        name="description">
+
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -17,9 +20,12 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -185,24 +191,26 @@
                     <div class="bg-white rounded p-5 m-5 mb-0">
                         <form>
                             <div class="row g-3">
+                                <small id="contacterror" style="color: crimson;"></small>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name"
-                                        style="height: 55px;">
+                                    <input type="text" class="form-control bg-light border-0" id="contactname"
+                                        placeholder="Your Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email"
-                                        style="height: 55px;">
+                                    <input type="email" class="form-control bg-light border-0" id="contactemail"
+                                        placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Subject"
-                                        style="height: 55px;">
+                                    <input type="text" class="form-control bg-light border-0" id="contactsubject"
+                                        placeholder="Subject" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="5"
+                                    <textarea id="contactmessage" class="form-control bg-light border-0" rows="5"
                                         placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    <button id="contactbtn" class="btn btn-primary w-100 py-3" type="submit">Send
+                                        Message</button>
                                 </div>
                             </div>
                         </form>
@@ -246,8 +254,11 @@
                         Newsletter</h4>
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
+                            <input type="text" id="newsletteremail" class="form-control p-3 border-0"
+                                placeholder="Your Email Address">
+                            <button id="newsletterbtn" class="btn btn-primary">Sign Up</button>
+
+                            <small id="newslettererror" style="color: crimson;"></small>
                         </div>
                     </form>
                     <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
@@ -295,7 +306,10 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
+
     <script src="js/main.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
