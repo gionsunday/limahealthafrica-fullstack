@@ -103,8 +103,8 @@
 
 .service-item {
     position: relative;
-    height: 350px;
-    padding: 0 30px;
+    
+    padding: 0 0px;
     transition: .5s;
 }
 
@@ -295,3 +295,8 @@
         color: white;
         padding: 1em;
     }
+    .flex-row{
+        flex-direction: column !important;
+    }
+}
+
